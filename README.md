@@ -14,16 +14,17 @@ evolve into a ready-to-use scalable proxy solution.
 Health-checks
 -------------
 
-Dead backends won't be marked as dead in Redis, they will only
-be *announced* as dead. This is on purpose since it's possible to have a delay
-between the dead detection and the announcement with the current
-implementation.
+For now the [Hipache-hchecker](https://github.com/samalba/hipache-hchecker/) is not working because
+[Radix](https://github.com/fzzy/radix) has removed pubsub support.
 
-This is not a blocker for production deployment, you will need
-to monitor the "dead" channel with the [Hipache-hchecker](https://github.com/samalba/hipache-hchecker/).
+Because of this I have changed the way Hipache-Nginx dealed with dead backends, instead of announcing 
+it they are marked as dead until a better solution is implemented.
+
+Keep in mind that until better solution is found dead backends will not be marked as alive again.
 
 TODO
 -------------
 - emulate proxy_next_upstream behaviour in lua using location.capture
 - statistics panel
 - test websockets support
+- better health-check handling
