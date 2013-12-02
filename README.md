@@ -14,7 +14,7 @@ evolve into a ready-to-use scalable proxy solution.
 Health-checks
 -------------
 
-For now the [Hipache-hchecker](https://github.com/samalba/hipache-hchecker/) is not working because
+For now [Hipache-hchecker](https://github.com/samalba/hipache-hchecker/) is not working because
 [Radix](https://github.com/fzzy/radix) has removed pubsub support.
 
 Because of this I have changed the way Hipache-Nginx dealed with dead backends, instead of announcing 
