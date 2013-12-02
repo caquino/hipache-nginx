@@ -21,3 +21,9 @@ implementation.
 
 This is not a blocker for production deployment, you will need
 to monitor the "dead" channel with the [Hipache-hchecker](https://github.com/samalba/hipache-hchecker/).
+
+TODO
+-------------
+- emulate proxy_next_upstream behaviour in lua using location.capture
+- statistics panel
+- test websockets support
