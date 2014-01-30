@@ -1,0 +1,3 @@
+[submodule "hipache/lua/lib/lua-resty-upstream-healthcheck"]
+	path = hipache/lua/lib/lua-resty-upstream-healthcheck
+	url = https://github.com/agentzh/lua-resty-upstream-healthcheck
